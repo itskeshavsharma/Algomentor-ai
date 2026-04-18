@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Room | AlgoMentor AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo"><i class="fas fa-brain"></i><span>AlgoMentor AI</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-th-large"></i><span>Dashboard</span></a></li>
+                <li><a href="history.html"><i class="fas fa-history"></i><span>History</span></a></li>
+                <li class="active"><a href="study.html"><i class="fas fa-book-open"></i><span>Study Room</span></a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+            </ul>
+            <div class="sidebar-footer"><p><small>© 2026 AlgoMentor AI</small></p></div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h2>Study Room</h2>
+                <div class="user-pill" onclick="window.location.href='profile.html'">
+                    <span id="header-username">Learner</span>
+                    <img id="header-avatar" class="avatar" src="https://via.placeholder.com/30" alt="avatar">
+                </div>
+            </header>
+            <section class="content-section">
+                <h3>DSA Roadmap</h3>
+                <div class="study-grid">
+                    <div class="study-card"><h4>Arrays & Hashing</h4><p>Linear data structures and O(1) lookups.</p></div>
+                    <div class="study-card"><h4>Linked Lists</h4><p>Singly, Doubly, and Circular logic.</p></div>
+                    <div class="study-card"><h4>Stack & Queue</h4><p>LIFO and FIFO implementations.</p></div>
+                    <div class="study-card"><h4>Trees & Graphs</h4><p>DFS, BFS, and Hierarchical data.</p></div>
+                    <div class="study-card"><h4>Dynamic Programming</h4><p>Optimization via subproblems.</p></div>
+                    <div class="study-card"><h4>Backtracking</h4><p>Recursion and state-space search.</p></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

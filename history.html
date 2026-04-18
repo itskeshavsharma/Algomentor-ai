@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History | AlgoMentor AI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo"><i class="fas fa-brain"></i><span>AlgoMentor AI</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-th-large"></i><span>Dashboard</span></a></li>
+                <li class="active"><a href="history.html"><i class="fas fa-history"></i><span>History</span></a></li>
+                <li><a href="study.html"><i class="fas fa-book-open"></i><span>Study Room</span></a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+            </ul>
+            <div class="sidebar-footer"><p><small>© 2026 AlgoMentor AI</small></p></div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <h2>History</h2>
+                <div class="user-pill" onclick="window.location.href='profile.html'">
+                    <span id="header-username">Learner</span>
+                    <img id="header-avatar" class="avatar" src="https://via.placeholder.com/30" alt="avatar">
+                </div>
+            </header>
+            <section class="content-section">
+                <h3>Past Questions</h3>
+                <div id="historyList" class="history-grid"></div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
